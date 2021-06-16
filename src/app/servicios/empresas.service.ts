@@ -12,15 +12,13 @@ import { Empresa } from '../models/empresas';
   providedIn: 'root'
 })
 export class EmpresasService {
-
   resourceUrl: string;
   constructor(private httpClient: HttpClient) {
     this.resourceUrl = 'https://pav2.azurewebsites.net/api/empresas/';
     //this.resourceUrl = 'https://localhost:44349/api/articulos/';
   }
 
-
- getById(Id: number) {
+  getById(Id: number) {
     return this.httpClient.get(this.resourceUrl + Id);
-  }}
+  }
 }
