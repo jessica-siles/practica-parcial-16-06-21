@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 import { MenuComponent } from './menu/menu.component';
 import { EmpresasComponent } from './empresas/empresas.component';
 import { routes } from './app-routing.module';
+import { PruebaComponent } from './prueba/prueba.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, routes],
@@ -14,7 +15,8 @@ import { routes } from './app-routing.module';
     AppComponent,
     HelloComponent,
     MenuComponent,
-    EmpresasComponent
+    EmpresasComponent,
+    PruebaComponent
   ],
   bootstrap: [AppComponent]
 })
