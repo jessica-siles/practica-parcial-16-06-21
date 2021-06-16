@@ -18,7 +18,7 @@ export class EmpresasService {
     //this.resourceUrl = 'https://localhost:44349/api/articulos/';
   }
 
-  getById(Id: number) {
-    return this.httpClient.get(this.resourceUrl + Id);
+  get() {
+    return this.httpClient.get(this.resourceUrl);
   }
 }
