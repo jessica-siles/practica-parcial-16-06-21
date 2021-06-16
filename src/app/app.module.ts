@@ -8,6 +8,7 @@ import { MenuComponent } from './menu/menu.component';
 import { EmpresasComponent } from './empresas/empresas.component';
 import { routes } from './app-routing.module';
 import { PruebaComponent } from './prueba/prueba.component';
+import { EmpresasService } from './servicios/empresas.service';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, routes],
@@ -18,6 +19,7 @@ import { PruebaComponent } from './prueba/prueba.component';
     EmpresasComponent,
     PruebaComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [EmpresasService]
 })
 export class AppModule {}
